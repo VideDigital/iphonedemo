@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111518">
+  <meta name="description" content="NEXO Mobile — demonstração de loja de iPhones com catálogo por geração e simulador de avaliação para troca. Projeto conceitual da Agência VIDE.">
+  <title>NEXO Mobile | Seu próximo iPhone começa aqui</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#principal">Pular para o conteúdo</a>
+  <div class="topbar"><span class="topbar-dot"></span> PROJETO DEMONSTRATIVO <span class="topbar-sep">/</span> UMA EXPERIÊNCIA DE COMPRA MAIS INTELIGENTE <span class="topbar-right">DESENVOLVIDO POR <strong>VIDE ↗</strong></span></div>
+  <header class="header" id="inicio">
+    <div class="container header-content">
+      <a href="#inicio" class="brand" aria-label="NEXO Mobile início"><span class="brand-symbol">n<span>.</span></span><span>NEXO<span class="brand-light">mobile</span></span></a>
+      <nav class="nav" id="mainNav" aria-label="Navegação principal">
+        <a href="#catalogo">Explorar iPhones</a><a href="#troca">Avalie seu usado</a><a href="#como-funciona">Como funciona</a><a href="#duvidas">Dúvidas</a>
+      </nav>
+      <div class="header-actions"><button class="icon-button favorites-button" id="favoriteShortcut" aria-label="Ver favoritos" title="Meus favoritos"><span aria-hidden="true">♡</span><span id="favCount" class="fav-count">0</span></button><a href="#troca" class="button button-dark header-cta">Fazer avaliação <span aria-hidden="true">↗</span></a><button class="menu-button" id="menuToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span><span></span></button></div>
+    </div>
+  </header>
+  <main id="principal">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow light"><span class="eyebrow-line"></span> UMA NOVA FORMA DE ESCOLHER</div>
+          <h1>O próximo<br>capítulo é <span>seu.</span></h1>
+          <p>Encontre o iPhone ideal para seu momento. Explore gerações, compare possibilidades e descubra quanto seu aparelho atual pode valer na troca.</p>
+          <div class="hero-actions"><a class="button button-lime" href="#catalogo">Explorar iPhones <span aria-hidden="true">↗</span></a><a class="button button-text light-link" href="#troca">Avaliar meu iPhone <span aria-hidden="true">↗</span></a></div>
+          <div class="hero-foot"><span class="hero-avatars" aria-hidden="true">◎ ◉ ◌</span><span>Um catálogo para descobrir.<br><strong>Uma experiência para decidir.</strong></span></div>
+        </div>
+        <div class="hero-visual" role="img" aria-label="Fotografia de um iPhone branco em destaque">
+          <img src="https://images.unsplash.com/photo-1737280855191-406feba6110a?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="iPhone branco de três câmeras fotografado em close" fetchpriority="high">
+          <div class="hero-shade"></div>
+          <div class="hero-chip hero-chip-top"><span class="chip-icon">✦</span><span>Escolha com<br><strong>mais liberdade.</strong></span></div>
+          <div class="hero-chip hero-chip-bottom"><span class="mini-circle">↗</span><span><small>NA NEXO VOCÊ PODE</small><strong>Comprar. Trocar. Evoluir.</strong></span></div>
+          <div class="hero-image-credit">FOTO ILUSTRATIVA · UNSPLASH</div>
+        </div>
+      </div>
+      <div class="container hero-bottom"><span>01 / EXPLORE. COMPARE. EVOLUA.</span><span>ROLE PARA DESCOBRIR <span aria-hidden="true">↓</span></span></div>
+    </section>
+    <section class="trust-strip" aria-label="Vantagens da experiência"><div class="container trust-grid"><div><span class="trust-mark">◇</span><span><strong>Catálogo por geração</strong><small>Do primeiro ao mais recente</small></span></div><div><span class="trust-mark">↗</span><span><strong>Simulação de troca</strong><small>Estime o valor do seu usado</small></span></div><div><span class="trust-mark">✳</span><span><strong>Atendimento direto</strong><small>Continue a conversa no WhatsApp</small></span></div></div></section>
+
+    <section class="section featured-section" id="destaques">
+      <div class="container">
+        <div class="section-head"><div><div class="eyebrow"><span class="eyebrow-line"></span> CURADORIA NEXO</div><h2>Encontre o que combina<br>com <em>você.</em></h2></div><p>Para quem quer tudo. Para quem precisa do essencial. Para quem ama tecnologia. Existe um iPhone para cada história.</p></div>
+        <div class="feature-grid">
+          <a class="feature-tile feature-one" href="#catalogo" data-feature-filter="recentes"><div class="feature-text"><span class="tile-eyebrow">ÚLTIMAS GERAÇÕES</span><h3>O extraordinário<br>é agora.</h3><span class="tile-link">Explorar lançamentos ↗</span></div><div class="feature-phone feature-phone-one" aria-hidden="true"><span class="camera-cluster"><i></i><i></i><i></i></span><span class="phone-logo">●</span></div></a>
+          <a class="feature-tile feature-two" href="#catalogo" data-feature-filter="pro"><div class="feature-text"><span class="tile-eyebrow">LINHA PRO</span><h3>Para quem exige<br>mais de tudo.</h3><span class="tile-link">Ver modelos Pro ↗</span></div><div class="feature-phone feature-phone-two" aria-hidden="true"><span class="camera-cluster"><i></i><i></i><i></i></span><span class="phone-logo">●</span></div></a>
+          <a class="feature-tile feature-three" href="#troca"><div class="feature-text"><span class="tile-eyebrow">UPGRADE INTELIGENTE</span><h3>Seu atual vale<br>um novo começo.</h3><span class="tile-link">Simular minha troca ↗</span></div><div class="feature-three-arrow" aria-hidden="true">↗</div></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section catalog-section" id="catalogo">
+      <div class="container">
+        <div class="section-head catalog-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> EXPLORE O UNIVERSO IPHONE</div><h2>Todos os modelos.<br><em>Um só lugar.</em></h2></div><p>Uma vitrine de gerações, dos clássicos aos lançamentos. Consulte modelos e encontre a próxima escolha.</p></div>
+        <div class="catalog-toolbar">
+          <div class="tabs" id="catalogTabs" role="group" aria-label="Filtro rápido por linha"><button data-filter="todos" class="tab active" aria-pressed="true">Todos</button><button data-filter="recentes" class="tab" aria-pressed="false">Recentes</button><button data-filter="pro" class="tab" aria-pressed="false">Linha Pro</button><button data-filter="acessiveis" class="tab" aria-pressed="false">Essenciais</button><button data-filter="classicos" class="tab" aria-pressed="false">Clássicos</button><button data-filter="favoritos" class="tab" aria-pressed="false">♡ Favoritos</button></div>
+          <div class="catalog-controls"><label class="searchbox"><span aria-hidden="true">⌕</span><input id="modelSearch" type="search" placeholder="Buscar iPhone..." autocomplete="off" aria-label="Buscar por modelo"></label><label class="selectbox"><span class="sr-only">Ordenar catálogo</span><select id="catalogSort"><option value="recent">Mais recentes</option><option value="oldest">Mais antigos</option><option value="name">Nome A–Z</option></select></label></div>
+        </div>
+        <div class="catalog-meta"><span id="resultCount" aria-live="polite">Carregando modelos...</span><span class="catalog-note"><span class="dot"></span> Vitrine demonstrativa · Disponibilidade sob consulta</span></div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        <div class="catalog-more"><button id="loadMore" class="button button-outline" type="button">Ver mais modelos <span aria-hidden="true">↓</span></button><p>Modelos históricos são apresentados para referência e consulta, não como estoque confirmado.</p></div>
+      </div>
+    </section>
+
+    <section class="trade-section" id="troca">
+      <div class="container">
+        <div class="trade-header"><div><div class="eyebrow light"><span class="eyebrow-line"></span> SEU USADO TEM POTENCIAL</div><h2>Quanto vale seu<br><em>iPhone hoje?</em></h2><p>Conte um pouco sobre seu aparelho e receba uma estimativa ilustrativa em segundos. Sem compromisso.</p></div><div class="trade-stamp" aria-hidden="true"><span>TRADE</span><strong>↗</strong><span>IN</span></div></div>
+        <div class="trade-grid">
+          <form id="tradeForm" class="trade-form" novalidate>
+            <div class="form-heading"><span class="form-step">01 / 03</span><h3>Sobre o seu aparelho</h3></div>
+            <div class="field-row"><label class="field"><span>Modelo do iPhone <b>*</b></span><select id="tradeModel" required><option value="">Selecione seu modelo</option></select></label><label class="field"><span>Armazenamento</span><select id="tradeStorage"><option value="64">64 GB</option><option value="128" selected>128 GB</option><option value="256">256 GB</option><option value="512">512 GB</option><option value="1024">1 TB</option><option value="2048">2 TB</option><option value="32">32 GB ou menos</option></select></label></div>
+            <div class="form-heading form-heading-space"><span class="form-step">02 / 03</span><h3>Estado de conservação</h3></div>
+            <fieldset class="condition-group"><legend>Aparência do aparelho</legend><div class="condition-options"><label><input type="radio" name="condition" value="excellent" checked><span><strong>Excelente</strong><small>Sem marcas relevantes</small></span></label><label><input type="radio" name="condition" value="good"><span><strong>Bom</strong><small>Marcas leves de uso</small></span></label><label><input type="radio" name="condition" value="regular"><span><strong>Regular</strong><small>Marcas perceptíveis</small></span></label></div></fieldset>
+            <div class="field-row field-row-middle"><label class="field"><span>Condição da tela</span><select id="tradeScreen"><option value="perfect">Sem danos</option><option value="scratched">Arranhões visíveis</option><option value="cracked">Trincada / quebrada</option></select></label><label class="field"><span>Funcionamento</span><select id="tradeWorking"><option value="perfect">Tudo funcionando</option><option value="minor">Pequeno defeito</option><option value="major">Defeito importante</option></select></label></div>
+            <div class="battery-head"><label for="tradeBattery">Saúde da bateria</label><strong><span id="batteryValue">90</span>%</strong></div><input type="range" min="50" max="100" step="1" value="90" id="tradeBattery" aria-label="Saúde da bateria"><div class="range-hints"><span>50%</span><span>100%</span></div>
+            <div class="form-heading form-heading-space"><span class="form-step">03 / 03</span><h3>Últimos detalhes</h3></div><label class="checkline"><input type="checkbox" id="tradeAccessories" checked><span>Tenho caixa e acessórios originais</span></label><label class="checkline"><input type="checkbox" id="tradeUnlocked" checked><span>iCloud desvinculado e aparelho desbloqueado</span></label><button type="submit" class="button button-lime calculate-btn">Calcular estimativa <span aria-hidden="true">↗</span></button>
+          </form>
+          <aside class="trade-result" aria-live="polite">
+            <span class="result-topline"><span class="pulse-dot"></span> SIMULAÇÃO DE TROCA</span><div class="result-image" aria-hidden="true"><div class="result-orbit"></div><div class="result-phone"><div class="result-camera"><i></i><i></i><i></i></div></div><div class="result-orbit result-orbit-two"></div></div>
+            <div class="estimate-label">ESTIMATIVA ILUSTRATIVA</div><div class="estimate-value" id="estimateValue">R$ —</div><p class="result-description" id="resultDescription">Preencha os campos e clique em calcular para descobrir uma estimativa para seu iPhone.</p><div class="result-details" id="estimateBreakdown" hidden></div><a id="tradeWhatsapp" href="#contato" class="button button-white result-cta">Conversar sobre minha troca <span aria-hidden="true">↗</span></a><p class="result-disclaimer">Não constitui oferta, cotação de mercado ou compromisso de compra. O valor real depende da inspeção e política da loja. Aparelhos bloqueados não são elegíveis.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey-section" id="como-funciona"><div class="container"><div class="section-head"><div><div class="eyebrow"><span class="eyebrow-line"></span> SIMPLES ASSIM</div><h2>Seu upgrade,<br><em>sem complicação.</em></h2></div><p>Uma jornada pensada para ajudar você a sair da dúvida e chegar mais perto do próximo iPhone.</p></div><div class="journey-grid"><article><span>01</span><div class="journey-icon">⌕</div><h3>Encontre seu modelo</h3><p>Explore o catálogo e selecione o iPhone que faz sentido para você.</p></article><article><span>02</span><div class="journey-icon">↔</div><h3>Avalie seu usado</h3><p>Simule o potencial de troca do seu aparelho atual com poucos dados.</p></article><article><span>03</span><div class="journey-icon">↗</div><h3>Converse e decida</h3><p>Envie sua preferência para o WhatsApp e confirme condições com a loja.</p></article></div></div></section>
+
+    <section class="photo-banner"><div class="container photo-banner-grid"><div><div class="eyebrow light"><span class="eyebrow-line"></span> UM PRÓXIMO PASSO MAIS FÁCIL</div><h2>Boa tecnologia.<br><em>Boas escolhas.</em></h2><a class="button button-lime" href="#catalogo">Encontrar meu iPhone <span aria-hidden="true">↗</span></a></div><img src="https://images.unsplash.com/photo-1737190892098-784bdd31b862?auto=format&amp;fit=crop&amp;w=1150&amp;q=85" alt="iPhone branco fotografado na mão de uma pessoa" loading="lazy"></div></section>
+    <section class="section faq-section" id="duvidas"><div class="container faq-grid"><div><div class="eyebrow"><span class="eyebrow-line"></span> PERGUNTAS FREQUENTES</div><h2>Antes de escolher,<br><em>é bom saber.</em></h2><p>Informações gerais sobre esta experiência demonstrativa.</p></div><div class="faq-items"><details><summary>A estimativa da calculadora é uma oferta de compra?<span>+</span></summary><p>Não. É apenas uma simulação com parâmetros fictícios para demonstrar a ferramenta. Uma loja real precisa configurar sua tabela e avaliar o aparelho antes de oferecer um valor.</p></details><details><summary>Todos os modelos estão disponíveis para compra?<span>+</span></summary><p>Não necessariamente. O site exibe modelos atuais e históricos para demonstrar a busca e o catálogo. Estoque, capacidade, cores, preços e condições serão definidos pela loja.</p></details><details><summary>Posso trocar um iPhone com defeito?<span>+</span></summary><p>Depende da política da loja e da gravidade do defeito. A simulação aplica descontos ilustrativos; a aceitação real depende de avaliação técnica.</p></details><details><summary>Como funciona o atendimento pelo WhatsApp?<span>+</span></summary><p>O site prepara uma mensagem com o modelo ou a simulação escolhida. Para transformar esta demo em loja real, basta configurar o número oficial da empresa no código.</p></details></div></div></section>
+    <section class="contact-section" id="contato"><div class="container contact-inner"><div><div class="eyebrow light"><span class="eyebrow-line"></span> PRONTO PARA EVOLUIR?</div><h2>Seu próximo iPhone<br>está a uma <em>conversa.</em></h2><p>Escolha um modelo e veja como seria iniciar um atendimento direto, sem formulários intermináveis.</p></div><a class="button button-lime" id="mainContactButton" href="https://api.whatsapp.com/send?text=Ol%C3%A1" target="_blank" rel="noopener noreferrer">Iniciar atendimento <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-top"><a href="#inicio" class="brand footer-brand"><span class="brand-symbol">n<span>.</span></span><span>NEXO<span class="brand-light">mobile</span></span></a><p>Uma experiência de compra que coloca<br>as melhores escolhas nas suas mãos.</p><div class="footer-links"><a href="#catalogo">Modelos</a><a href="#troca">Simular troca</a><a href="#duvidas">Perguntas</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> NEXO Mobile · Marca fictícia para demonstração.</span><span>Projeto conceitual por <strong>AGÊNCIA VIDE</strong>. Sem vínculo com a Apple Inc.</span></div></footer>
+  <a href="#contato" id="floatingContact" class="floating-contact" aria-label="Ir ao contato pelo WhatsApp" title="Fale com a loja"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.4 7.5L3 20.8l1.6-4.9A8.5 8.5 0 1 1 20.5 11.8Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.7 8.2c-.3-.7-.6-.7-1-.7-.4 0-.8.2-1.1.6-.4.4-.6 1-.6 1.7s.4 1.5.9 2.1c.5.7 1.9 2.5 4.5 3.6 1.5.6 2.3.6 2.9.5.8-.2 1.6-.8 1.9-1.5.2-.4.2-.8 0-.9-.2-.1-1.1-.6-1.5-.8-.4-.2-.6-.2-.9.2-.3.4-.7.9-1 .9s-1.6-.6-2.3-1.2c-.6-.5-1.2-1.2-1.4-1.6-.2-.3 0-.5.2-.8l.5-.6c.2-.2.3-.5.2-.7Z" fill="currentColor"/></svg></a>
+  <dialog id="productDialog" class="product-dialog" aria-labelledby="dialogTitle"><button class="dialog-close" id="dialogClose" aria-label="Fechar detalhes">×</button><div id="dialogContent"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
